@@ -1,0 +1,105 @@
+Namespace(apex=True, apex_opt_level='O1', batch_size=64, cache_dataset=False, data_path='data', device_id=3, dist_rank=0, dist_url='env://', distributed=False, epochs=800, eval_file='data/Set5_x2.h5', gpus=1, growth_rate=64, is_master_node=True, loss_scale_value=128, lr=0.0001, lr_gamma=0.1, lr_step_size=600, model='RDN', nodes=1, num_blocks=16, num_features=64, num_layers=8, num_workers=8, output_dir='outputs', patch_size=32, pretrained=False, pretrained_weight_path='', print_freq=1, rank=0, resume='', scale=2, seed=123, start_epoch=0, sync_bn=False, test_only=False, train_file='data/DIV2K_x2.h5', weight_decay=0.0001, weights_file=None, workers=16, world_size=1)
+device_id= 3
+Loading data
+Loading training data
+Took 0.0002396106719970703
+Loading validation data
+Creating data loaders
+Creating model
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+combine_grad           : None
+check_combined_tensors : None
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : 128.0
+combine_grad           : True
+check_combined_tensors : None
+Use npu fused optimizer
+Start training
+Epoch: [1]  [ 0/63]  eta: 0:00:57  lr: 0.0001  img/s: 245.3037984168846  loss: 0.0542 (0.0542)  time: 0.9089  data: 0.6480  max mem: 0
+Epoch: [1]  [ 1/63]  eta: 0:00:35  lr: 0.0001  img/s: 256.38216144403174  loss: 0.0455 (0.0499)  time: 0.5794  data: 0.3241  max mem: 0
+Epoch: [1]  [ 2/63]  eta: 0:00:28  lr: 0.0001  img/s: 242.48736775163323  loss: 0.0493 (0.0497)  time: 0.4744  data: 0.2161  max mem: 0
+Epoch: [1]  [ 3/63]  eta: 0:00:25  lr: 0.0001  img/s: 239.75671658854463  loss: 0.0493 (0.0501)  time: 0.4227  data: 0.1621  max mem: 0
+Epoch: [1]  [ 4/63]  eta: 0:00:23  lr: 0.0001  img/s: 233.2408162697868  loss: 0.0493 (0.0492)  time: 0.3931  data: 0.1297  max mem: 0
+Epoch: [1]  [ 5/63]  eta: 0:00:21  lr: 0.0001  img/s: 239.40069973539192  loss: 0.0493 (0.0497)  time: 0.3722  data: 0.1081  max mem: 0
+Epoch: [1]  [ 6/63]  eta: 0:00:20  lr: 0.0001  img/s: 260.59746601467657  loss: 0.0494 (0.0497)  time: 0.3542  data: 0.0927  max mem: 0
+Epoch: [1]  [ 7/63]  eta: 0:00:19  lr: 0.0001  img/s: 254.49812090666728  loss: 0.0493 (0.0491)  time: 0.3414  data: 0.0811  max mem: 0
+Epoch: [1]  [ 8/63]  eta: 0:00:18  lr: 0.0001  img/s: 232.26746340150746  loss: 0.0493 (0.0489)  time: 0.3341  data: 0.0721  max mem: 0
+Epoch: [1]  [ 9/63]  eta: 0:00:17  lr: 0.0001  img/s: 240.43338214811928  loss: 0.0469 (0.0481)  time: 0.3274  data: 0.0649  max mem: 0
+Epoch: [1]  [10/63]  eta: 0:00:17  lr: 0.0001  img/s: 236.70742893322011  loss: 0.0469 (0.0479)  time: 0.3222  data: 0.0590  max mem: 0
+Epoch: [1]  [11/63]  eta: 0:00:16  lr: 0.0001  img/s: 227.62907467096085  loss: 0.0459 (0.0475)  time: 0.3188  data: 0.0541  max mem: 0
+Epoch: [1]  [12/63]  eta: 0:00:16  lr: 0.0001  img/s: 199.2370436949879  loss: 0.0459 (0.0471)  time: 0.3191  data: 0.0500  max mem: 0
+Epoch: [1]  [13/63]  eta: 0:00:15  lr: 0.0001  img/s: 241.961264269908  loss: 0.0455 (0.0465)  time: 0.3152  data: 0.0464  max mem: 0
+Epoch: [1]  [14/63]  eta: 0:00:15  lr: 0.0001  img/s: 247.11260365575242  loss: 0.0455 (0.0458)  time: 0.3115  data: 0.0433  max mem: 0
+Epoch: [1]  [15/63]  eta: 0:00:14  lr: 0.0001  img/s: 263.42821253611356  loss: 0.0453 (0.0454)  time: 0.3072  data: 0.0406  max mem: 0
+Epoch: [1]  [16/63]  eta: 0:00:14  lr: 0.0001  img/s: 240.21392322939457  loss: 0.0455 (0.0457)  time: 0.3049  data: 0.0383  max mem: 0
+Epoch: [1]  [17/63]  eta: 0:00:13  lr: 0.0001  img/s: 239.1675644660336  loss: 0.0455 (0.0457)  time: 0.3028  data: 0.0361  max mem: 0
+Epoch: [1]  [18/63]  eta: 0:00:13  lr: 0.0001  img/s: 235.2068442810403  loss: 0.0455 (0.0455)  time: 0.3012  data: 0.0342  max mem: 0
+Epoch: [1]  [19/63]  eta: 0:00:13  lr: 0.0001  img/s: 239.74151347653407  loss: 0.0453 (0.0452)  time: 0.2995  data: 0.0325  max mem: 0
+Epoch: [1]  [20/63]  eta: 0:00:12  lr: 0.0001  img/s: 230.17605284775232  loss: 0.0453 (0.0449)  time: 0.2985  data: 0.0310  max mem: 0
+Epoch: [1]  [21/63]  eta: 0:00:12  lr: 0.0001  img/s: 239.2110428901147  loss: 0.0452 (0.0446)  time: 0.2971  data: 0.0296  max mem: 0
+Epoch: [1]  [22/63]  eta: 0:00:12  lr: 0.0001  img/s: 247.61819439704078  loss: 0.0452 (0.0441)  time: 0.2955  data: 0.0283  max mem: 0
+Epoch: [1]  [23/63]  eta: 0:00:11  lr: 0.0001  img/s: 266.72203365579514  loss: 0.0441 (0.0439)  time: 0.2932  data: 0.0271  max mem: 0
+Epoch: [1]  [24/63]  eta: 0:00:11  lr: 0.0001  img/s: 233.95371918977642  loss: 0.0441 (0.0438)  time: 0.2924  data: 0.0261  max mem: 0
+Epoch: [1]  [25/63]  eta: 0:00:11  lr: 0.0001  img/s: 244.34032366265464  loss: 0.0428 (0.0435)  time: 0.2913  data: 0.0251  max mem: 0
+Epoch: [1]  [26/63]  eta: 0:00:10  lr: 0.0001  img/s: 251.88273048354347  loss: 0.0428 (0.0432)  time: 0.2899  data: 0.0241  max mem: 0
+Epoch: [1]  [27/63]  eta: 0:00:10  lr: 0.0001  img/s: 243.36055758832893  loss: 0.0419 (0.0431)  time: 0.2890  data: 0.0233  max mem: 0
+Epoch: [1]  [28/63]  eta: 0:00:10  lr: 0.0001  img/s: 238.89979637461374  loss: 0.0419 (0.0429)  time: 0.2882  data: 0.0225  max mem: 0
+Epoch: [1]  [29/63]  eta: 0:00:09  lr: 0.0001  img/s: 242.6429913097556  loss: 0.0417 (0.0427)  time: 0.2874  data: 0.0217  max mem: 0
+Epoch: [1]  [30/63]  eta: 0:00:09  lr: 0.0001  img/s: 252.36842050833675  loss: 0.0419 (0.0427)  time: 0.2864  data: 0.0210  max mem: 0
+Epoch: [1]  [31/63]  eta: 0:00:09  lr: 0.0001  img/s: 249.18122290604956  loss: 0.0417 (0.0424)  time: 0.2854  data: 0.0204  max mem: 0
+Epoch: [1]  [32/63]  eta: 0:00:08  lr: 0.0001  img/s: 244.82569053341055  loss: 0.0417 (0.0421)  time: 0.2847  data: 0.0198  max mem: 0
+Epoch: [1]  [33/63]  eta: 0:00:08  lr: 0.0001  img/s: 239.84819007334775  loss: 0.0412 (0.0420)  time: 0.2842  data: 0.0192  max mem: 0
+Epoch: [1]  [34/63]  eta: 0:00:08  lr: 0.0001  img/s: 239.75307623122933  loss: 0.0412 (0.0418)  time: 0.2837  data: 0.0186  max mem: 0
+Epoch: [1]  [35/63]  eta: 0:00:07  lr: 0.0001  img/s: 239.7091865073341  loss: 0.0409 (0.0418)  time: 0.2833  data: 0.0181  max mem: 0
+Epoch: [1]  [36/63]  eta: 0:00:07  lr: 0.0001  img/s: 241.1448519589533  loss: 0.0409 (0.0416)  time: 0.2828  data: 0.0176  max mem: 0
+Epoch: [1]  [37/63]  eta: 0:00:07  lr: 0.0001  img/s: 250.87238226256252  loss: 0.0409 (0.0418)  time: 0.2821  data: 0.0172  max mem: 0
+Epoch: [1]  [38/63]  eta: 0:00:07  lr: 0.0001  img/s: 245.74192632927083  loss: 0.0409 (0.0417)  time: 0.2815  data: 0.0167  max mem: 0
+Epoch: [1]  [39/63]  eta: 0:00:06  lr: 0.0001  img/s: 240.15761706361099  loss: 0.0409 (0.0417)  time: 0.2811  data: 0.0163  max mem: 0
+Epoch: [1]  [40/63]  eta: 0:00:06  lr: 0.0001  img/s: 238.85791877589918  loss: 0.0409 (0.0416)  time: 0.2808  data: 0.0159  max mem: 0
+Epoch: [1]  [41/63]  eta: 0:00:06  lr: 0.0001  img/s: 235.94199617128322  loss: 0.0402 (0.0415)  time: 0.2806  data: 0.0156  max mem: 0
+Epoch: [1]  [42/63]  eta: 0:00:05  lr: 0.0001  img/s: 237.16207851643085  loss: 0.0402 (0.0414)  time: 0.2803  data: 0.0152  max mem: 0
+Epoch: [1]  [43/63]  eta: 0:00:05  lr: 0.0001  img/s: 237.7150629808578  loss: 0.0400 (0.0413)  time: 0.2801  data: 0.0149  max mem: 0
+Epoch: [1]  [44/63]  eta: 0:00:05  lr: 0.0001  img/s: 238.8562184729636  loss: 0.0400 (0.0411)  time: 0.2798  data: 0.0145  max mem: 0
+Epoch: [1]  [45/63]  eta: 0:00:05  lr: 0.0001  img/s: 241.64869784399335  loss: 0.0397 (0.0409)  time: 0.2795  data: 0.0142  max mem: 0
+Epoch: [1]  [46/63]  eta: 0:00:04  lr: 0.0001  img/s: 250.30557303919787  loss: 0.0397 (0.0407)  time: 0.2790  data: 0.0139  max mem: 0
+Epoch: [1]  [47/63]  eta: 0:00:04  lr: 0.0001  img/s: 238.65384293957095  loss: 0.0395 (0.0405)  time: 0.2788  data: 0.0136  max mem: 0
+Epoch: [1]  [48/63]  eta: 0:00:04  lr: 0.0001  img/s: 238.67633575297594  loss: 0.0395 (0.0404)  time: 0.2786  data: 0.0133  max mem: 0
+Epoch: [1]  [49/63]  eta: 0:00:03  lr: 0.0001  img/s: 238.27295870362545  loss: 0.0390 (0.0402)  time: 0.2784  data: 0.0131  max mem: 0
+Epoch: [1]  [50/63]  eta: 0:00:03  lr: 0.0001  img/s: 238.22432371509862  loss: 0.0388 (0.0400)  time: 0.2656  data: 0.0001  max mem: 0
+Epoch: [1]  [51/63]  eta: 0:00:03  lr: 0.0001  img/s: 238.78164150480168  loss: 0.0382 (0.0399)  time: 0.2659  data: 0.0001  max mem: 0
+Epoch: [1]  [52/63]  eta: 0:00:03  lr: 0.0001  img/s: 237.88380149074246  loss: 0.0380 (0.0398)  time: 0.2660  data: 0.0001  max mem: 0
+Epoch: [1]  [53/63]  eta: 0:00:02  lr: 0.0001  img/s: 238.44842102084016  loss: 0.0379 (0.0398)  time: 0.2661  data: 0.0001  max mem: 0
+Epoch: [1]  [54/63]  eta: 0:00:02  lr: 0.0001  img/s: 246.1703339734384  loss: 0.0378 (0.0396)  time: 0.2658  data: 0.0001  max mem: 0
+Epoch: [1]  [55/63]  eta: 0:00:02  lr: 0.0001  img/s: 239.66916452757752  loss: 0.0376 (0.0394)  time: 0.2658  data: 0.0001  max mem: 0
+Epoch: [1]  [56/63]  eta: 0:00:01  lr: 0.0001  img/s: 239.20379538836076  loss: 0.0375 (0.0393)  time: 0.2662  data: 0.0001  max mem: 0
+Epoch: [1]  [57/63]  eta: 0:00:01  lr: 0.0001  img/s: 238.39505653141933  loss: 0.0373 (0.0392)  time: 0.2665  data: 0.0001  max mem: 0
+Epoch: [1]  [58/63]  eta: 0:00:01  lr: 0.0001  img/s: 237.1719269352493  loss: 0.0372 (0.0390)  time: 0.2664  data: 0.0001  max mem: 0
+Epoch: [1]  [59/63]  eta: 0:00:01  lr: 0.0001  img/s: 237.75759368661593  loss: 0.0369 (0.0390)  time: 0.2665  data: 0.0001  max mem: 0
+Epoch: [1]  [60/63]  eta: 0:00:00  lr: 0.0001  img/s: 239.80747896824937  loss: 0.0367 (0.0389)  time: 0.2664  data: 0.0001  max mem: 0
+Epoch: [1]  [61/63]  eta: 0:00:00  lr: 0.0001  img/s: 248.31292175938475  loss: 0.0360 (0.0388)  time: 0.2659  data: 0.0001  max mem: 0
+Epoch: [1]  [62/63]  eta: 0:00:00  lr: 0.0001  img/s: 145.3299463584606  loss: 0.0359 (0.0387)  time: 0.2639  data: 0.0001  max mem: 0
+Epoch: [1] Total time: 0:00:18
+epoch:1 FPS: 242.324
+Test:  [0/5]  eta: 0:00:00  loss: 0.0169 (0.0169)  epoch_psnr: 34.8458 (34.8458)  time: 0.1141  data: 0.0230  max mem: 0
+Test:  [1/5]  eta: 0:00:00  loss: 0.0169 (0.0214)  epoch_psnr: 32.9275 (33.8867)  time: 0.1342  data: 0.0198  max mem: 0
+Test:  [2/5]  eta: 0:00:00  loss: 0.0259 (0.0298)  epoch_psnr: 32.9275 (30.9839)  time: 0.1387  data: 0.0193  max mem: 0
+Test:  [3/5]  eta: 0:00:00  loss: 0.0241 (0.0284)  epoch_psnr: 32.9275 (31.5759)  time: 0.1394  data: 0.0184  max mem: 0
+Test:  [4/5]  eta: 0:00:00  loss: 0.0254 (0.0278)  epoch_psnr: 32.9275 (31.1717)  time: 0.1256  data: 0.0172  max mem: 0
+Test: Total time: 0:00:00
+epoch_psnr=31.171736907958984 
